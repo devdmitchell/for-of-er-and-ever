@@ -2,7 +2,13 @@
  * YOUR CODE HERE *
  ******************/
 
-// const addAll =
+const addAll = function(arr){
+let total = 0
+for(let num of arr){
+  total += num
+}
+return total
+}
 
 const countSpaces = function(string){
   let count = 0
@@ -13,6 +19,69 @@ const countSpaces = function(string){
   }
   return count
 }
+
+const countTrues = function(arr2){
+  let trues = 0
+  for(let boolean of arr2){
+    if(boolean === true){
+      trues ++
+    }
+  }return trues
+}
+const makeFriendly = function(str1) {
+  let str = " "
+  for(let char of str1){
+    if(char !== "."){
+      str = str + char
+    }else {
+      str = str + "!"
+  }  
+  }
+  return str
+  }
+
+const cubeAll = function(arr){
+let cubed = []
+for(let num of arr){
+  cubed.push(num ** 3)
+}
+return cubed
+}
+
+const addNoises = function(arr){
+let noisesArr = []
+for(let name of arr){
+  if(name === "Fido" || name === "Rolph" || name === "Maisie"){
+    noisesArr.push(name + ' says "Woof!"')
+  }else if(name === "Garfield"||name === "Heathcliff"){
+    noisesArr.push(name + ' says "Meow!"')
+  }else if((name === "Barnie"||name === "Sharp Tooth")){
+    noisesArr.push(name + ' says "ROWR."')
+  }
+}
+return noisesArr
+}
+
+const womenOnly = function(arr){
+  const women = []
+  for(let person of arr){
+    if(person[person.length - 1] === "F"){
+      women.push(person)
+    }
+  } return women 
+}
+
+const integersOnly = function(arr){
+  let integers = []
+  for(let num of arr){
+    if(num % 1 === 0){
+  
+     integers.push(num)
+    }
+  }
+  return integers
+} 
+
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
